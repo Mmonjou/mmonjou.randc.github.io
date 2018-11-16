@@ -1,0 +1,223 @@
+/* HEAD NAVBAR */
+  .hnavbar {
+    background: white;
+    transition: all 0.3s ease;
+    height: 70px;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hnavbar-brand img {
+    height: 50px;
+  }
+  .hnavbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hnavbar-right a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: #716668;
+  }
+  .hnavbar-item {
+    cursor: pointer;
+    padding: 0 20px;
+  }
+  .hnavbar-link {
+    color: #616668;
+    font-size: 14px;
+  }
+  .hnavbar-link:hover {
+    color: #0A8754;
+    text-decoration: none;
+  }
+/* BRAND-CONTAINER */
+  .brand {
+    color: white;
+    text-align: center; 
+    height: 66vh;
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 20px 0px;
+  }
+/* NAVBAR-CONTAINER */
+  *{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+  }
+  html{
+    height:100%;
+  }
+  .wrapper{
+    min-height:100%;
+    width:100%;
+    position:relative;
+  }
+  .navigationDesktop{
+    background:#7CB385;
+  }
+  nav {
+    height:50px;
+    width:900px;
+    background-color: #7CB385; 
+    display:block;
+    margin:0 auto;
+    text-align: center;
+  }
+  nav a{
+    display:block;
+    text-decoration: none;
+    background: #7CB385;
+    font-family: "Roboto", sans-serif;
+    font-size:13pt;
+    color:white;
+    justify-content: space-between;
+  }
+  nav a:hover{
+    background:#537A5A;
+    color:#f0f1f5;
+  }
+  nav ul{
+    list-style: none;
+  }
+  nav ul li{
+    float:left;
+    width:300px;
+    height:50px;
+    line-height: 50px;
+    background:#BEC5AD;
+  }
+
+  nav ul ul li{
+    position:relative;
+    display:none;
+  }
+
+  nav ul ul ul{
+    display:none;
+  }
+
+  nav ul li:hover ul li{
+    display: block;
+    animation: navmenu 500ms forwards;
+  }
+
+  @keyframes navmenu{
+    0%{
+      opacity:0;
+      top:5px;
+  }
+    100%{
+      opacity:1;
+      top:0px;
+    }
+  }
+  nav ul ul li:hover ul{
+    display:block;
+    position:absolute;
+    width:140px;
+    left:140px;
+    top:0px;
+  }
+
+/* MAIN CONTAINER */
+  .container {
+    margin: 20px 20px 20px 5px;
+  }
+
+  .description {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin: 20px auto;
+    width: 700px;
+  }
+
+  .description h1 {
+    font-family: "Caveat", cursive;
+    font-size: 50px;
+    padding-bottom: 30px;
+  }
+/* Cards section */
+  .card {
+    height: 240px;
+    width: 240px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    background-size: cover !important;
+    background-position: center;
+    color: white;
+    position: relative;
+    margin:20px 10px 20px 10px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card-category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+  }
+  .card-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    background: black;
+    opacity: 0;
+  }
+  .card-link:hover {
+    opacity: 0.1;
+  }
+  .name {
+    font-size: 30px;
+    font-family: "Caveat", cursive;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+/* FOOTER */
+  .footer-container {
+    background: #7FB487;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0px 50px;
+  }
+
+  .footer-container p {
+    font-family: "Krub",sans-serif;
+    color: #CBFFD7;
+  }
+
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-links a {
+    color: #CBFFD7;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+  }
+
+  .footer-links a:hover {
+    color: white;
+  }
+
+  .footer-container .fa-heart {
+    color: #D23333;
+  }
+
